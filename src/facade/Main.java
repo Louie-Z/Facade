@@ -21,7 +21,7 @@ public class Main {
     // create a bedroom object with the old speaker
     FacadeBedroom bedroom = new FacadeBedroom(light, curtain, speaker, monitor);
 
-    // use
+    // Process a series of operations involved with a fixed range of subclasses
     System.out.println("In the Living room:");
     System.out.println("\nSleep mode:");
     living_room.sleep();
@@ -32,7 +32,7 @@ public class Main {
     System.out.println("\nMovie mode:");
     living_room.movie();
 
-    //2
+    //We can add functionalities to the façade interface
     System.out.println("\nIn the Bedroom:");
     bedroom.currentTime("day");
     System.out.println("Work mode:");
@@ -41,10 +41,11 @@ public class Main {
     System.out.println("Work mode:");
     bedroom.work();
 
-    //individual control 3
+    //The façade object does not encapsulate the subsystems
     monitor.displayFamilyPhoto();
 
-    // 5
+    // Achieve loose coupling between the client and the subclass by enhancing maintainability,
+    // extensibility, testability, and reusability.
     FacadeBedroom upgraded_bedroom = new FacadeBedroom(light, curtain, awesome_speaker, monitor);
     System.out.println("\nIn the upgraded Bedroom:");
     upgraded_bedroom.currentTime("day");
