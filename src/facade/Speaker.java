@@ -8,10 +8,10 @@ public interface Speaker {
   /**
    * This method turns on the speaker.
    */
-  public void on();
+  void on();
 
   /**
    * This method turns off the speaker.
    */
-  public void off();
+  void off();
 }
